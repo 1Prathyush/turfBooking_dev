@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/turfdata/turfdata.css" />
+    <link rel="shortcut icon" href="/assets/flaticon.png" type="image/x-icon" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="turfname" id="turfname">Your Turf Name</div>
+      <a href="#" class="toggle-button" id="nav-icon1">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="/owner">HOME</a></li>
+          <li><a href="/turfdata"> ADD TURF</a></li>
+          <li><button class="logout" id="logout">LOGOUT</button></li>
+        </ul>
+      </div>
+    </div>
+    <center>
+    <div class="main-content">
+      <form action="#">
+        <div class="row">
+          <div class="col-25">
+            <label for="turfname">Turf Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="tname" id="tname" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="ph">Phone Number </label>
+          </div>
+          <div class="col-75">
+            <input type="number" name="ph" id="ph" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="place">Place </label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="place" id="place" />
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="lmark">Land Mark </label>
+            </div>
+            <div class="col-75">
+              <input type="text" name="lmark" id="lmark" />
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="pin">Pin Code</label>
+          </div>
+          <div class="col-75">
+            <input type="number" name="pin" id="pin" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="dist">District</label>
+          </div>
+          <div class="col-75">
+            <select name="district" id="district">
+              <option value=" "></option>
+              <option value="Alappuzha">Alappuzha</option>
+              <option value="Ernakulam">Ernakulam</option>
+              <option value="Idukki">Idukki</option>
+              <option value="Kannur">Kannur</option>
+              <option value="Kasaragod">Kasaragod</option>
+              <option value="Kollam">Kollam</option>
+              <option value="Kottayam">Kottayam</option>
+              <option value="Kozhikode">Kozhikode</option>
+              <option value="Malappuram">Malappuram</option>
+              <option value="Palakkad">Palakkad</option>
+              <option value="Pathanamthitta">Pathanamthitta</option>
+              <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+              <option value="Thrissur">Thrissur</option>
+              <option value="Wayanad">Wayanad</option>
+            </select>
+          </div>
+        </div>
+        <input type="submit" value="Submit" id="submit" >
+      </form>
+
+    </div>
+</center>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+    <script src="/turfdata/turfdata.js"></script>
+  </body>
+</html>

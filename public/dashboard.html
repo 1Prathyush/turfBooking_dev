@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard/dashboard.css" />
+    <link rel="shortcut icon" href="/assets/flaticon.png" type="image/x-icon" />
+    <title>dash</title>
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="turfname" id="turfname">Turf book</div>
+    </div>
+
+
+    <div class="dropdownbox">
+      <form>
+        <div class="detail">
+          Choose District
+          <select name="district" id="district">
+            <option value=" "></option>
+            <option value="Alappuzha">Alappuzha</option>
+            <option value="Ernakulam">Ernakulam</option>
+            <option value="Idukki">Idukki</option>
+            <option value="Kannur">Kannur</option>
+            <option value="Kasaragod">Kasaragod</option>
+            <option value="Kollam">Kollam</option>
+            <option value="Kottayam">Kottayam</option>
+            <option value="Kozhikode">Kozhikode</option>
+            <option value="Malappuram">Malappuram</option>
+            <option value="Palakkad">Palakkad</option>
+            <option value="Pathanamthitta">Pathanamthitta</option>
+            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+            <option value="Thrissur">Thrissur</option>
+            <option value="Wayanad">Wayanad</option>
+          </select>
+
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="results" id="result">
+    </div>
+    <script src="dashboard/dashboard.js"></script>
+  </body>
+</html>
